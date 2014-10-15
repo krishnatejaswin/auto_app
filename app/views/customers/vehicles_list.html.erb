@@ -1,0 +1,28 @@
+<% @customer_vehicles.each do |customer_vehicle| %>
+<p>
+  <strong>Name:</strong>
+  <%= customer_vehicle.name %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= customer_vehicle.model %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= customer_vehicle.manufacturer %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= customer_vehicle.year %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= customer_vehicle.customer.name %>
+</p>
+
+<% end %>
+<%= link_to 'Back', vehicles_path %>

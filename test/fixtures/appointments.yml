@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 1
+  vehicle_id: MyString
+  date: 2014-10-11
+  time: 2014-10-11 15:19:02
+  reason: MyString
+
+two:
+  customer_id: 1
+  vehicle_id: MyString
+  date: 2014-10-11
+  time: 2014-10-11 15:19:02
+  reason: MyString
