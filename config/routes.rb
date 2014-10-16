@@ -7,6 +7,9 @@ Rails.application.routes.draw do
     member do
       get 'vehicles_list'
     end
+    collection do
+      get 'vehicles_li'
+    end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

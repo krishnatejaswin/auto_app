@@ -1,0 +1,24 @@
+<table>
+<thead>
+  <tr> <td>Vehicle Name</td><td>Vehicle model</td><td>Vehicle manufacture</td><td>Vehicle year</td><td>Customer</td><tr>
+</thead>
+<% @vehicles.each do |customer_vehicle| %>
+<tr><td>
+  <%= customer_vehicle.name %>
+</td>
+<td>
+  <%= customer_vehicle.model %>
+</td>
+<td>
+    <%= customer_vehicle.manufacturer %>
+</td>
+<td>
+  <%= customer_vehicle.year %>
+</td>
+<td>
+<td>
+  <%= customer_vehicle.customer.name %>
+</td>
+</tr>
+<% end %>
+<%= link_to 'Back', customers_path %>
