@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
   resources :appointments
 
-  resources :vehicles
-
   resources :customers do 
+    resources :vehicles
     member do
       get 'vehicles_list'
     end
