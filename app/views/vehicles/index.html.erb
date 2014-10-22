@@ -19,10 +19,10 @@
         <td><%= vehicle.model %></td>
         <td><%= vehicle.manufacturer %></td>
         <td><%= vehicle.year %></td>
-        <td><%= vehicle.customer_id %></td>
-        <td><%= link_to 'Show', vehicle %></td>
-        <td><%= link_to 'Edit', edit_vehicle_path(vehicle) %></td>
-        <td><%= link_to 'Destroy', vehicle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= vehicle.customer.name %></td>
+        <td><%= link_to 'Show', customer_vehicle_path(vehicle, :customer_id => vehicle.customer_id) %></td>
+        <td><%= link_to 'Edit', edit_customer_vehicle_path(vehicle, :customer_id => vehicle.customer_id) %></td>
+        <td><%= link_to 'Destroy', customer_vehicle_path(vehicle, :customer_id => vehicle.customer_id), :method =>:delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

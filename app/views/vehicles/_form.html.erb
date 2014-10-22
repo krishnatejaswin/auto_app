@@ -29,6 +29,7 @@
   </div>
   <div class="field">
     <%= f.label :customer_id %><br>
+     <%= f.hidden_field :customer_id, :value => @customer.id %></td>
     <%= @customer.name %>
   </div>
   <div class="actions">

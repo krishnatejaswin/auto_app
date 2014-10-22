@@ -25,5 +25,5 @@
   <%= @vehicle.customer.name %>
 </p>
 
-<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
-<%= link_to 'Back', vehicles_path %>
+<%= link_to 'Back', customer_vehicles_path %>
+<%= link_to 'Edit', edit_customer_vehicle_path(@vehicle, :customer_id => @vehicle.customer_id) %>
